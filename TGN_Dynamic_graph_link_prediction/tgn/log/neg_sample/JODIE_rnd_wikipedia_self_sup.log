@@ -1,0 +1,6 @@
+2022-09-18 00:17:00,236 - root - INFO - *** Arguments ***
+2022-09-18 00:17:00,236 - root - INFO - Namespace(aggregator='last', backprop_every=1, data='wikipedia', different_new_nodes=False, drop_out=0.1, dyrep=False, embedding_module='time', gpu=0, lr=0.0001, memory_dim=172, memory_update_at_end=False, memory_updater='rnn', message_dim=100, message_function='identity', model='jodie', n_degree=10, n_head=2, n_layer=1, n_runs=5, neg_sample='rnd', node_dim=100, randomize_features=False, test_ratio=0.15, time_dim=100, uniform=False, use_destination_embedding_in_message=False, use_memory=True, use_source_embedding_in_message=False, val_ratio=0.15)
+2022-09-18 00:17:02,673 - root - INFO - ************************************
+2022-09-18 00:17:02,673 - root - INFO - *********** Test starts *************
+2022-09-18 00:17:02,673 - root - INFO - ************************************
+2022-09-18 00:17:02,673 - root - INFO - *********** Run 0 starts *************

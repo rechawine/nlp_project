@@ -1,0 +1,225 @@
+2022-09-18 00:17:27,846 - root - INFO - *** Arguments ***
+2022-09-18 00:17:27,846 - root - INFO - Namespace(aggregator='last', backprop_every=1, data='wikipedia', different_new_nodes=False, drop_out=0.1, dyrep=False, embedding_module='graph_attention', gpu=0, lr=0.0001, memory_dim=172, memory_update_at_end=False, memory_updater='gru', message_dim=100, message_function='identity', model='tgn', n_degree=10, n_head=2, n_layer=1, n_runs=5, neg_sample='rnd', node_dim=100, randomize_features=False, test_ratio=0.15, time_dim=100, uniform=False, use_destination_embedding_in_message=False, use_memory=True, use_source_embedding_in_message=False, val_ratio=0.15)
+2022-09-18 00:17:30,295 - root - INFO - ************************************
+2022-09-18 00:17:30,295 - root - INFO - *********** Test starts *************
+2022-09-18 00:17:30,295 - root - INFO - ************************************
+2022-09-18 00:17:30,295 - root - INFO - *********** Run 0 starts *************
+2022-09-18 00:17:53,618 - root - INFO - Performance of the tgn model for the test set.
+2022-09-18 00:17:53,618 - root - INFO - Network Name: wikipedia, Model: tgn
+2022-09-18 00:17:53,618 - root - INFO - Test statistics: *** Old Nodes (Transductive) ***
+2022-09-18 00:17:53,618 - root - INFO - Test statistics: Old nodes -- auc_inherent: 0.9776300420168068
+2022-09-18 00:17:53,618 - root - INFO - Test statistics: Old nodes -- ap_inherent: 0.9796033843126575
+2022-09-18 00:17:53,618 - root - INFO - Test statistics: New nodes -- auc_inherent: 0.9673460351674488
+2022-09-18 00:17:53,618 - root - INFO - Test statistics: New nodes -- ap_inherent: 0.9699888559426139
+2022-09-18 00:17:53,618 - root - INFO - Test statistics: Old nodes -- ap: 0.9796033843126575
+2022-09-18 00:17:53,618 - root - INFO - Test statistics: Old nodes -- au_roc_score: 0.9776300420168068
+2022-09-18 00:17:53,619 - root - INFO - Test statistics: Old nodes -- opt_thr_au_roc: 0.5259283781051636
+2022-09-18 00:17:53,619 - root - INFO - Test statistics: Old nodes -- acc_auroc_opt_thr: 0.9264175670268109
+2022-09-18 00:17:53,619 - root - INFO - Test statistics: Old nodes -- prec_auroc_opt_thr: 0.9407601123162902
+2022-09-18 00:17:53,619 - root - INFO - Test statistics: Old nodes -- rec_auroc_opt_thr: 0.9112384953981593
+2022-09-18 00:17:53,619 - root - INFO - Test statistics: Old nodes -- f1_auroc_opt_thr: 0.925219892305209
+2022-09-18 00:17:53,619 - root - INFO - Test statistics: Old nodes -- au_pr_score: 0.9795307864769288
+2022-09-18 00:17:53,619 - root - INFO - Test statistics: Old nodes -- opt_thr_au_pr: 0.4744604527950287
+2022-09-18 00:17:53,619 - root - INFO - Test statistics: Old nodes -- acc_aupr_opt_thr: 0.9227410964385755
+2022-09-18 00:17:53,619 - root - INFO - Test statistics: Old nodes -- prec_aupr_opt_thr: 0.9297372254007671
+2022-09-18 00:17:53,619 - root - INFO - Test statistics: Old nodes -- rec_aupr_opt_thr: 0.9167006802721088
+2022-09-18 00:17:53,619 - root - INFO - Test statistics: Old nodes -- f1_aupr_opt_thr: 0.9184649808982137
+2022-09-18 00:17:53,619 - root - INFO - Test statistics: Old nodes -- acc_thr_0.5: 0.921469587835134
+2022-09-18 00:17:53,619 - root - INFO - Test statistics: Old nodes -- prec_thr_0.5: 0.9299420028488758
+2022-09-18 00:17:53,620 - root - INFO - Test statistics: Old nodes -- rec_thr_0.5: 0.9117226890756303
+2022-09-18 00:17:53,620 - root - INFO - Test statistics: Old nodes -- f1_thr_0.5: 0.9205630564875258
+2022-09-18 00:17:53,620 - root - INFO - Test statistics: New nodes -- ap: 0.9699888559426139
+2022-09-18 00:17:53,620 - root - INFO - Test statistics: New nodes -- au_roc_score: 0.9673460351674488
+2022-09-18 00:17:53,620 - root - INFO - Test statistics: New nodes -- opt_thr_au_roc: 0.5620729923248291
+2022-09-18 00:17:53,620 - root - INFO - Test statistics: New nodes -- acc_auroc_opt_thr: 0.9051728110599078
+2022-09-18 00:17:53,620 - root - INFO - Test statistics: New nodes -- prec_auroc_opt_thr: 0.9255838401565307
+2022-09-18 00:17:53,620 - root - INFO - Test statistics: New nodes -- rec_auroc_opt_thr: 0.8826135615536538
+2022-09-18 00:17:53,620 - root - INFO - Test statistics: New nodes -- f1_auroc_opt_thr: 0.9028020913281911
+2022-09-18 00:17:53,620 - root - INFO - Test statistics: New nodes -- au_pr_score: 0.9698918542464551
+2022-09-18 00:17:53,620 - root - INFO - Test statistics: New nodes -- opt_thr_au_pr: 0.5041646957397461
+2022-09-18 00:17:53,620 - root - INFO - Test statistics: New nodes -- acc_aupr_opt_thr: 0.9045967741935484
+2022-09-18 00:17:53,621 - root - INFO - Test statistics: New nodes -- prec_aupr_opt_thr: 0.9091112968447643
+2022-09-18 00:17:53,621 - root - INFO - Test statistics: New nodes -- rec_aupr_opt_thr: 0.9011487820934826
+2022-09-18 00:17:53,621 - root - INFO - Test statistics: New nodes -- f1_aupr_opt_thr: 0.9043111705561069
+2022-09-18 00:17:53,621 - root - INFO - Test statistics: New nodes -- acc_thr_0.5: 0.8986932192231732
+2022-09-18 00:17:53,621 - root - INFO - Test statistics: New nodes -- prec_thr_0.5: 0.9000702859333585
+2022-09-18 00:17:53,621 - root - INFO - Test statistics: New nodes -- rec_thr_0.5: 0.8973370638578013
+2022-09-18 00:17:53,621 - root - INFO - Test statistics: New nodes -- f1_thr_0.5: 0.8985497567760201
+2022-09-18 00:17:53,621 - root - INFO - Info: Run 0 elapsed time: 23.3257417678833 seconds.
+2022-09-18 00:17:53,621 - root - INFO - ************************************
+2022-09-18 00:17:53,621 - root - INFO - *********** Run 1 starts *************
+2022-09-18 00:18:12,967 - root - INFO - Performance of the tgn model for the test set.
+2022-09-18 00:18:12,967 - root - INFO - Network Name: wikipedia, Model: tgn
+2022-09-18 00:18:12,967 - root - INFO - Test statistics: *** Old Nodes (Transductive) ***
+2022-09-18 00:18:12,967 - root - INFO - Test statistics: Old nodes -- auc_inherent: 0.9772434218925665
+2022-09-18 00:18:12,967 - root - INFO - Test statistics: Old nodes -- ap_inherent: 0.9795292561582568
+2022-09-18 00:18:12,967 - root - INFO - Test statistics: New nodes -- auc_inherent: 0.9673204336469239
+2022-09-18 00:18:12,967 - root - INFO - Test statistics: New nodes -- ap_inherent: 0.9704792067590139
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- ap: 0.9795292561582568
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- au_roc_score: 0.9772434218925665
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- opt_thr_au_roc: 0.5109452605247498
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- acc_auroc_opt_thr: 0.9254291716686674
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- prec_auroc_opt_thr: 0.9472744319462453
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- rec_auroc_opt_thr: 0.9022028811524611
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- f1_auroc_opt_thr: 0.9235459779238779
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- au_pr_score: 0.9794738382124638
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- opt_thr_au_pr: 0.4523400664329529
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- acc_aupr_opt_thr: 0.9250090036014406
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- prec_aupr_opt_thr: 0.9349005720860388
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- rec_aupr_opt_thr: 0.9152501000400158
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- f1_aupr_opt_thr: 0.9242810263290011
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- acc_thr_0.5: 0.9204401760704282
+2022-09-18 00:18:12,968 - root - INFO - Test statistics: Old nodes -- prec_thr_0.5: 0.9391256036135557
+2022-09-18 00:18:12,969 - root - INFO - Test statistics: Old nodes -- rec_thr_0.5: 0.899263705482193
+2022-09-18 00:18:12,969 - root - INFO - Test statistics: Old nodes -- f1_thr_0.5: 0.9185710722873526
+2022-09-18 00:18:12,969 - root - INFO - Test statistics: New nodes -- ap: 0.9704792067590139
+2022-09-18 00:18:12,969 - root - INFO - Test statistics: New nodes -- au_roc_score: 0.9673204336469239
+2022-09-18 00:18:12,969 - root - INFO - Test statistics: New nodes -- opt_thr_au_roc: 0.527134120464325
+2022-09-18 00:18:12,969 - root - INFO - Test statistics: New nodes -- acc_auroc_opt_thr: 0.906871296905859
+2022-09-18 00:18:12,969 - root - INFO - Test statistics: New nodes -- prec_auroc_opt_thr: 0.9242217773076319
+2022-09-18 00:18:12,969 - root - INFO - Test statistics: New nodes -- rec_auroc_opt_thr: 0.8878143515470703
+2022-09-18 00:18:12,969 - root - INFO - Test statistics: New nodes -- f1_auroc_opt_thr: 0.9048933736497085
+2022-09-18 00:18:12,969 - root - INFO - Test statistics: New nodes -- au_pr_score: 0.9703973433758311
+2022-09-18 00:18:12,969 - root - INFO - Test statistics: New nodes -- opt_thr_au_pr: 0.47858646512031555
+2022-09-18 00:18:12,969 - root - INFO - Test statistics: New nodes -- acc_aupr_opt_thr: 0.9061932192231731
+2022-09-18 00:18:12,969 - root - INFO - Test statistics: New nodes -- prec_aupr_opt_thr: 0.9116087727003183
+2022-09-18 00:18:12,969 - root - INFO - Test statistics: New nodes -- rec_aupr_opt_thr: 0.900687952600395
+2022-09-18 00:18:12,970 - root - INFO - Test statistics: New nodes -- f1_aupr_opt_thr: 0.905642732458476
+2022-09-18 00:18:12,970 - root - INFO - Test statistics: New nodes -- acc_thr_0.5: 0.9004279131007241
+2022-09-18 00:18:12,970 - root - INFO - Test statistics: New nodes -- prec_thr_0.5: 0.9110357539797335
+2022-09-18 00:18:12,970 - root - INFO - Test statistics: New nodes -- rec_thr_0.5: 0.8876267281105991
+2022-09-18 00:18:12,970 - root - INFO - Test statistics: New nodes -- f1_thr_0.5: 0.8989988805332099
+2022-09-18 00:18:12,970 - root - INFO - Info: Run 1 elapsed time: 19.348629474639893 seconds.
+2022-09-18 00:18:12,970 - root - INFO - ************************************
+2022-09-18 00:18:12,970 - root - INFO - *********** Run 2 starts *************
+2022-09-18 00:18:25,706 - root - INFO - Performance of the tgn model for the test set.
+2022-09-18 00:18:25,707 - root - INFO - Network Name: wikipedia, Model: tgn
+2022-09-18 00:18:25,707 - root - INFO - Test statistics: *** Old Nodes (Transductive) ***
+2022-09-18 00:18:25,707 - root - INFO - Test statistics: Old nodes -- auc_inherent: 0.9745530431220109
+2022-09-18 00:18:25,707 - root - INFO - Test statistics: Old nodes -- ap_inherent: 0.9769871186184169
+2022-09-18 00:18:25,707 - root - INFO - Test statistics: New nodes -- auc_inherent: 0.9640332099853468
+2022-09-18 00:18:25,707 - root - INFO - Test statistics: New nodes -- ap_inherent: 0.9674484757315485
+2022-09-18 00:18:25,707 - root - INFO - Test statistics: Old nodes -- ap: 0.9769871186184169
+2022-09-18 00:18:25,707 - root - INFO - Test statistics: Old nodes -- au_roc_score: 0.9745530431220109
+2022-09-18 00:18:25,708 - root - INFO - Test statistics: Old nodes -- opt_thr_au_roc: 0.5445523262023926
+2022-09-18 00:18:25,708 - root - INFO - Test statistics: Old nodes -- acc_auroc_opt_thr: 0.9213955582232893
+2022-09-18 00:18:25,708 - root - INFO - Test statistics: Old nodes -- prec_auroc_opt_thr: 0.9402080404265323
+2022-09-18 00:18:25,708 - root - INFO - Test statistics: Old nodes -- rec_auroc_opt_thr: 0.9010704281712687
+2022-09-18 00:18:25,708 - root - INFO - Test statistics: Old nodes -- f1_auroc_opt_thr: 0.9195757938951907
+2022-09-18 00:18:25,708 - root - INFO - Test statistics: Old nodes -- au_pr_score: 0.9769102475714608
+2022-09-18 00:18:25,708 - root - INFO - Test statistics: Old nodes -- opt_thr_au_pr: 0.48259320855140686
+2022-09-18 00:18:25,708 - root - INFO - Test statistics: Old nodes -- acc_aupr_opt_thr: 0.9207442977190875
+2022-09-18 00:18:25,708 - root - INFO - Test statistics: Old nodes -- prec_aupr_opt_thr: 0.9260251689305905
+2022-09-18 00:18:25,708 - root - INFO - Test statistics: Old nodes -- rec_aupr_opt_thr: 0.9162805122048819
+2022-09-18 00:18:25,708 - root - INFO - Test statistics: Old nodes -- f1_aupr_opt_thr: 0.9204298536991089
+2022-09-18 00:18:25,709 - root - INFO - Test statistics: Old nodes -- acc_thr_0.5: 0.9161544617847138
+2022-09-18 00:18:25,709 - root - INFO - Test statistics: Old nodes -- prec_thr_0.5: 0.922660588406008
+2022-09-18 00:18:25,709 - root - INFO - Test statistics: Old nodes -- rec_thr_0.5: 0.9087394957983194
+2022-09-18 00:18:25,709 - root - INFO - Test statistics: Old nodes -- f1_thr_0.5: 0.9154347908259177
+2022-09-18 00:18:25,709 - root - INFO - Test statistics: New nodes -- ap: 0.9674484757315485
+2022-09-18 00:18:25,709 - root - INFO - Test statistics: New nodes -- au_roc_score: 0.9640332099853468
+2022-09-18 00:18:25,709 - root - INFO - Test statistics: New nodes -- opt_thr_au_roc: 0.5697909593582153
+2022-09-18 00:18:25,709 - root - INFO - Test statistics: New nodes -- acc_auroc_opt_thr: 0.9022811059907834
+2022-09-18 00:18:25,709 - root - INFO - Test statistics: New nodes -- prec_auroc_opt_thr: 0.9208369615076573
+2022-09-18 00:18:25,709 - root - INFO - Test statistics: New nodes -- rec_auroc_opt_thr: 0.8811290322580645
+2022-09-18 00:18:25,709 - root - INFO - Test statistics: New nodes -- f1_auroc_opt_thr: 0.9000498970814514
+2022-09-18 00:18:25,709 - root - INFO - Test statistics: New nodes -- au_pr_score: 0.9673392597913573
+2022-09-18 00:18:25,709 - root - INFO - Test statistics: New nodes -- opt_thr_au_pr: 0.5279366374015808
+2022-09-18 00:18:25,710 - root - INFO - Test statistics: New nodes -- acc_aupr_opt_thr: 0.9017198815009876
+2022-09-18 00:18:25,710 - root - INFO - Test statistics: New nodes -- prec_aupr_opt_thr: 0.9084803184386526
+2022-09-18 00:18:25,710 - root - INFO - Test statistics: New nodes -- rec_aupr_opt_thr: 0.8948025016458195
+2022-09-18 00:18:25,710 - root - INFO - Test statistics: New nodes -- f1_aupr_opt_thr: 0.9010391754639392
+2022-09-18 00:18:25,710 - root - INFO - Test statistics: New nodes -- acc_thr_0.5: 0.8945260039499672
+2022-09-18 00:18:25,710 - root - INFO - Test statistics: New nodes -- prec_thr_0.5: 0.8927090235262336
+2022-09-18 00:18:25,710 - root - INFO - Test statistics: New nodes -- rec_thr_0.5: 0.897353522053983
+2022-09-18 00:18:25,710 - root - INFO - Test statistics: New nodes -- f1_thr_0.5: 0.8948187243172705
+2022-09-18 00:18:25,710 - root - INFO - Info: Run 2 elapsed time: 12.740272045135498 seconds.
+2022-09-18 00:18:25,710 - root - INFO - ************************************
+2022-09-18 00:18:25,710 - root - INFO - *********** Run 3 starts *************
+2022-09-18 00:18:46,411 - root - INFO - Performance of the tgn model for the test set.
+2022-09-18 00:18:46,411 - root - INFO - Network Name: wikipedia, Model: tgn
+2022-09-18 00:18:46,411 - root - INFO - Test statistics: *** Old Nodes (Transductive) ***
+2022-09-18 00:18:46,411 - root - INFO - Test statistics: Old nodes -- auc_inherent: 0.9761454800968005
+2022-09-18 00:18:46,411 - root - INFO - Test statistics: Old nodes -- ap_inherent: 0.9782298620298111
+2022-09-18 00:18:46,411 - root - INFO - Test statistics: New nodes -- auc_inherent: 0.9649031299772771
+2022-09-18 00:18:46,411 - root - INFO - Test statistics: New nodes -- ap_inherent: 0.9678963826100268
+2022-09-18 00:18:46,411 - root - INFO - Test statistics: Old nodes -- ap: 0.9782298620298111
+2022-09-18 00:18:46,412 - root - INFO - Test statistics: Old nodes -- au_roc_score: 0.9761454800968005
+2022-09-18 00:18:46,412 - root - INFO - Test statistics: Old nodes -- opt_thr_au_roc: 0.5113639235496521
+2022-09-18 00:18:46,412 - root - INFO - Test statistics: Old nodes -- acc_auroc_opt_thr: 0.9222989195678271
+2022-09-18 00:18:46,412 - root - INFO - Test statistics: Old nodes -- prec_auroc_opt_thr: 0.9410679826749269
+2022-09-18 00:18:46,412 - root - INFO - Test statistics: Old nodes -- rec_auroc_opt_thr: 0.9021608643457385
+2022-09-18 00:18:46,412 - root - INFO - Test statistics: Old nodes -- f1_auroc_opt_thr: 0.9205469077386521
+2022-09-18 00:18:46,412 - root - INFO - Test statistics: Old nodes -- au_pr_score: 0.9781642024009438
+2022-09-18 00:18:46,412 - root - INFO - Test statistics: Old nodes -- opt_thr_au_pr: 0.43511340022087097
+2022-09-18 00:18:46,412 - root - INFO - Test statistics: Old nodes -- acc_aupr_opt_thr: 0.9217527010804322
+2022-09-18 00:18:46,412 - root - INFO - Test statistics: Old nodes -- prec_aupr_opt_thr: 0.9244706667367306
+2022-09-18 00:18:46,412 - root - INFO - Test statistics: Old nodes -- rec_aupr_opt_thr: 0.9203961584633855
+2022-09-18 00:18:46,412 - root - INFO - Test statistics: Old nodes -- f1_aupr_opt_thr: 0.921721920999901
+2022-09-18 00:18:46,412 - root - INFO - Test statistics: Old nodes -- acc_thr_0.5: 0.9176560624249699
+2022-09-18 00:18:46,413 - root - INFO - Test statistics: Old nodes -- prec_thr_0.5: 0.9324315428425298
+2022-09-18 00:18:46,413 - root - INFO - Test statistics: Old nodes -- rec_thr_0.5: 0.9007763105242096
+2022-09-18 00:18:46,413 - root - INFO - Test statistics: Old nodes -- f1_thr_0.5: 0.9160936713303527
+2022-09-18 00:18:46,413 - root - INFO - Test statistics: New nodes -- ap: 0.9678963826100268
+2022-09-18 00:18:46,413 - root - INFO - Test statistics: New nodes -- au_roc_score: 0.9649031299772771
+2022-09-18 00:18:46,413 - root - INFO - Test statistics: New nodes -- opt_thr_au_roc: 0.5834551453590393
+2022-09-18 00:18:46,413 - root - INFO - Test statistics: New nodes -- acc_auroc_opt_thr: 0.9008574720210665
+2022-09-18 00:18:46,413 - root - INFO - Test statistics: New nodes -- prec_auroc_opt_thr: 0.9260418552298109
+2022-09-18 00:18:46,413 - root - INFO - Test statistics: New nodes -- rec_auroc_opt_thr: 0.8728275181040157
+2022-09-18 00:18:46,413 - root - INFO - Test statistics: New nodes -- f1_auroc_opt_thr: 0.8976213941569726
+2022-09-18 00:18:46,413 - root - INFO - Test statistics: New nodes -- au_pr_score: 0.9678079432361001
+2022-09-18 00:18:46,413 - root - INFO - Test statistics: New nodes -- opt_thr_au_pr: 0.49164342880249023
+2022-09-18 00:18:46,414 - root - INFO - Test statistics: New nodes -- acc_aupr_opt_thr: 0.8989763001974982
+2022-09-18 00:18:46,414 - root - INFO - Test statistics: New nodes -- prec_aupr_opt_thr: 0.9019059457620482
+2022-09-18 00:18:46,414 - root - INFO - Test statistics: New nodes -- rec_aupr_opt_thr: 0.8987853851217907
+2022-09-18 00:18:46,414 - root - INFO - Test statistics: New nodes -- f1_aupr_opt_thr: 0.8991267554930464
+2022-09-18 00:18:46,414 - root - INFO - Test statistics: New nodes -- acc_thr_0.5: 0.8943630678077682
+2022-09-18 00:18:46,414 - root - INFO - Test statistics: New nodes -- prec_thr_0.5: 0.8980490531136601
+2022-09-18 00:18:46,414 - root - INFO - Test statistics: New nodes -- rec_thr_0.5: 0.8900032916392363
+2022-09-18 00:18:46,414 - root - INFO - Test statistics: New nodes -- f1_thr_0.5: 0.8938836450647972
+2022-09-18 00:18:46,414 - root - INFO - Info: Run 3 elapsed time: 20.703837871551514 seconds.
+2022-09-18 00:18:46,414 - root - INFO - ************************************
+2022-09-18 00:18:46,414 - root - INFO - *********** Run 4 starts *************
+2022-09-18 00:18:59,527 - root - INFO - Performance of the tgn model for the test set.
+2022-09-18 00:18:59,527 - root - INFO - Network Name: wikipedia, Model: tgn
+2022-09-18 00:18:59,527 - root - INFO - Test statistics: *** Old Nodes (Transductive) ***
+2022-09-18 00:18:59,527 - root - INFO - Test statistics: Old nodes -- auc_inherent: 0.9779624344976087
+2022-09-18 00:18:59,527 - root - INFO - Test statistics: Old nodes -- ap_inherent: 0.9799152550057671
+2022-09-18 00:18:59,527 - root - INFO - Test statistics: New nodes -- auc_inherent: 0.967979682091359
+2022-09-18 00:18:59,527 - root - INFO - Test statistics: New nodes -- ap_inherent: 0.9708776598948078
+2022-09-18 00:18:59,527 - root - INFO - Test statistics: Old nodes -- ap: 0.9799152550057671
+2022-09-18 00:18:59,527 - root - INFO - Test statistics: Old nodes -- au_roc_score: 0.9779624344976087
+2022-09-18 00:18:59,528 - root - INFO - Test statistics: Old nodes -- opt_thr_au_roc: 0.5259965658187866
+2022-09-18 00:18:59,528 - root - INFO - Test statistics: Old nodes -- acc_auroc_opt_thr: 0.9271728691476591
+2022-09-18 00:18:59,528 - root - INFO - Test statistics: Old nodes -- prec_auroc_opt_thr: 0.9431967804617094
+2022-09-18 00:18:59,528 - root - INFO - Test statistics: Old nodes -- rec_auroc_opt_thr: 0.9101020408163267
+2022-09-18 00:18:59,528 - root - INFO - Test statistics: Old nodes -- f1_auroc_opt_thr: 0.9258405487818226
+2022-09-18 00:18:59,528 - root - INFO - Test statistics: Old nodes -- au_pr_score: 0.9798564744531009
+2022-09-18 00:18:59,528 - root - INFO - Test statistics: Old nodes -- opt_thr_au_pr: 0.4812370538711548
+2022-09-18 00:18:59,528 - root - INFO - Test statistics: Old nodes -- acc_aupr_opt_thr: 0.9268997599039617
+2022-09-18 00:18:59,528 - root - INFO - Test statistics: Old nodes -- prec_aupr_opt_thr: 0.9339167990028446
+2022-09-18 00:18:59,528 - root - INFO - Test statistics: Old nodes -- rec_aupr_opt_thr: 0.9200820328131252
+2022-09-18 00:18:59,528 - root - INFO - Test statistics: Old nodes -- f1_aupr_opt_thr: 0.9264189199887461
+2022-09-18 00:18:59,528 - root - INFO - Test statistics: Old nodes -- acc_thr_0.5: 0.9218157262905163
+2022-09-18 00:18:59,528 - root - INFO - Test statistics: Old nodes -- prec_thr_0.5: 0.9305937130539608
+2022-09-18 00:18:59,529 - root - INFO - Test statistics: Old nodes -- rec_thr_0.5: 0.9117627050820328
+2022-09-18 00:18:59,529 - root - INFO - Test statistics: Old nodes -- f1_thr_0.5: 0.920931316099478
+2022-09-18 00:18:59,529 - root - INFO - Test statistics: New nodes -- ap: 0.9708776598948078
+2022-09-18 00:18:59,529 - root - INFO - Test statistics: New nodes -- au_roc_score: 0.967979682091359
+2022-09-18 00:18:59,529 - root - INFO - Test statistics: New nodes -- opt_thr_au_roc: 0.5600772500038147
+2022-09-18 00:18:59,529 - root - INFO - Test statistics: New nodes -- acc_auroc_opt_thr: 0.9077172481895984
+2022-09-18 00:18:59,529 - root - INFO - Test statistics: New nodes -- prec_auroc_opt_thr: 0.9230452117025021
+2022-09-18 00:18:59,529 - root - INFO - Test statistics: New nodes -- rec_auroc_opt_thr: 0.8907768268597762
+2022-09-18 00:18:59,529 - root - INFO - Test statistics: New nodes -- f1_auroc_opt_thr: 0.9059611752062748
+2022-09-18 00:18:59,529 - root - INFO - Test statistics: New nodes -- au_pr_score: 0.9708003853280011
+2022-09-18 00:18:59,529 - root - INFO - Test statistics: New nodes -- opt_thr_au_pr: 0.5121251940727234
+2022-09-18 00:18:59,529 - root - INFO - Test statistics: New nodes -- acc_aupr_opt_thr: 0.9072070441079659
+2022-09-18 00:18:59,529 - root - INFO - Test statistics: New nodes -- prec_aupr_opt_thr: 0.9094480049114422
+2022-09-18 00:18:59,530 - root - INFO - Test statistics: New nodes -- rec_aupr_opt_thr: 0.9061849901250824
+2022-09-18 00:18:59,530 - root - INFO - Test statistics: New nodes -- f1_aupr_opt_thr: 0.9071601568055452
+2022-09-18 00:18:59,530 - root - INFO - Test statistics: New nodes -- acc_thr_0.5: 0.9004723502304148
+2022-09-18 00:18:59,530 - root - INFO - Test statistics: New nodes -- prec_thr_0.5: 0.9002579529150855
+2022-09-18 00:18:59,530 - root - INFO - Test statistics: New nodes -- rec_thr_0.5: 0.9010236998025016
+2022-09-18 00:18:59,530 - root - INFO - Test statistics: New nodes -- f1_thr_0.5: 0.9004227382501526
+2022-09-18 00:18:59,530 - root - INFO - Info: Run 4 elapsed time: 13.11580491065979 seconds.
+2022-09-18 00:18:59,530 - root - INFO - Info: Total elapsed time: 89.23470497131348 seconds.
